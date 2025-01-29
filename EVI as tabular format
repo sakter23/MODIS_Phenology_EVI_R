@@ -1,0 +1,12 @@
+WOH_PHEN <- mt_subset(product = "MCD12Q2",
+                  	lat = 42.233,
+                  	lon = -74.22,
+                  	band = c("Dormancy.Num_Modes_01","Greenup.Num_Modes_01",
+                           	"Maturity.Num_Modes_01","MidGreendown.Num_Modes_01",
+                           	"MidGreenup.Num_Modes_01","Senescence.Num_Modes_01"),
+                  	start = "2001-01-01",
+                  	end = "2022-01-01",
+                     km_lr = 0.5,
+                  	km_ab = 0.5,
+                  	progress = FALSE)
+write.table(WOH_PHEN, "WOH_PHEN.tab")
