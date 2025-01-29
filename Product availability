@@ -1,0 +1,10 @@
+##########Get list of MODIS products############
+mt_products()
+##########Get list of Bands in a products example############
+mt_bands(product ="MOD13Q1")
+##########Get dates of availability of  a product example ############
+dates <- mt_dates(product ="MOD13Q1",lat = 42, lon = -74)
+#########Get first few rows of dates#######################
+head(dates)
+#########Get last few rows of dates#######################
+tail(dates)
